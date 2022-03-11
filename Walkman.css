@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+}
+html{
+    /* font-size: 88.8%; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8em;
+}
+body{
+    position: relative;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: rgb(247, 182, 4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 9%;
+    height: 70px;
+    box-shadow: 0 0 20px rgb(247, 182, 4,1);
+}
+header .logo{
+    color: rgb(119, 253, 107);
+    font-weight: bolder;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+margin:0 15px;
+
+}
+nav ul li a{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.8s;
+}
+nav ul li a:hover{
+    color:rgb(119, 253, 107);
+    letter-spacing: 5px;
+}
+header button
+{
+    background-color: rgb(119, 253, 107);
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+#sony{
+    margin-top: -1%;
+    height: calc(100vh-50px);
+    padding: 10% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  rgb(247, 182, 4);
+}
+#sony .left{
+    width: 40%;
+}
+#sony .left h1{
+    font-size: 45px;
+    margin-bottom: 12px;
+    color: green;
+    font-weight: bolder;
+}
+#sony .left h1 span{
+    color:  rgb(246, 183, 10)  ;
+}
+#sony .left p{
+    margin-bottom: 30px;
+    color:#9999;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 10%;
+}
+#sony .left a{
+    background-color: chartreuse;
+    padding: 10px 20px;
+    color:black;
+    transition: 8s;
+    font-size: 22px;
+    font-weight: 900;
+}
+#sony .left a:hover{
+    background-color:rgb(246, 183, 10) ;
+}
+#sony .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
