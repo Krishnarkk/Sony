@@ -156,3 +156,248 @@ header button
 	-webkit-animation: kenburns-top 8s ease-in-out infinite;
 	        animation: kenburns-top 8s ease-in-out infinite;
 }
+
+
+#my_audio{
+    display: none;
+}
+#mob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		padding: 1rem 0;
+		margin: 2.5rem 0;
+		cursor: default;
+		overflow: scroll hidden;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 0px 1.25rem;
+		scrollbar-width: none;
+}
+.title2{
+    text-transform: uppercase;
+    position: relative;
+    font-size: 25px;
+    font-weight: bolder;
+    color: orangered;
+}
+.title2:before{
+    position: absolute;
+    
+    left: 10px;
+    bottom: -35px;
+    content: "";
+    background-color: orange;
+  width: 100%;
+  height: 5px;
+  border-radius: 8px;
+  animation: slide 3s ease-in-out infinite;
+
+}
+.title2:after{
+    position: absolute;
+    left: -10px;
+    top: -35px;
+    content: "";
+    background-color: orange;
+  width: 100%;
+  height: 5px;
+  border-radius: 8px;
+  animation: slide2 3s ease-in-out infinite;
+
+}
+@keyframes slide{
+    0%{
+        position: relative;
+        left: 10px;
+       background-color: red;
+    }
+    25%{
+        position: relative;
+        left: -15px;
+       background-color:yellowgreen;
+    }
+    100%{
+        position: relative;
+        left: -20px;
+       background-color: orange;
+    }
+}
+@keyframes slide2{
+    0%{
+        position: relative;
+        left: -10px;
+      background-color:  red;
+    }
+    25%{
+        position: relative;
+        left: 15px;
+      background-color:yellowgreen;
+    }
+    100%{
+        position: relative;
+        left: 20px;
+       background-color: orange;
+    }
+}
+
+
+
+.flex-container {
+    display: inline-flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* align-content: space-around; */
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(6) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(7) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(8) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  .img_container{
+    display: grid;
+  }
+
+
+.items{
+  text-align: center;
+}
+.mob_sec{
+  max-width: 1100px;
+  margin: 0 auto;
+  /* background: orange; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+}
+.v-stretch{
+  grid-row: span 2;
+}
+.h-stretch{
+  grid-column: span 2;
+}
+.big-stretch{
+  grid-column: span 2;
+  grid-row: span 2;
+
+}
+.mob_sec div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media(max-width:560px){
+  .mob_sec{
+    width: 100%;
+  }
+  .v-stretch{
+    grid-row:span 1;
+  }
+  .h-stretch{
+    grid-column:span 1;
+  }
+  .big-stretch{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+	
+
+
